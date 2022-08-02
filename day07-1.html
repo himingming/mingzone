@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <!--엘리먼트 선택자
+            h1 { color: rgb(255, 142, 37) }-->
+        <h1>안녕하세요</h1>
+
+        <!--하위 선택자
+            body p {color: red; }
+        -->
+        <P>프론트엔드 과정 소개</P>
+
+        <!--
+            클래스 선택자
+            .sel-class {font-style: italic; color: rgb(14,255,255);}
+        -->
+        <div>
+            <p class="sel-class">6월 개강</p>
+            <p class="sel-class">월수금</p>
+            <h3 class="sel-class">1</h3>
+            <!--
+            <h3 class="sel-class">1</h3>
+            <div class="sel-class">2</div>
+            <span class="sel-class">3</span>
+            -->
+            <!--
+                아이디 선택자
+                #sel-id {color: green;}
+            -->
+            <p id="sel-id">시각 19:00</p>
+        </div>
+
+        <span id="sel-id">홍길동</span>
+
+        <div>
+            <ul id="sel-class">
+                <li>01.html</li>
+                <li>02.css</li>
+                <li>03.javascript</li>
+            </ul>
+
+            <ol id="sel-class">
+                <li>04.react.js</li>
+                <li>05.node.js</li>
+                <li>06. mysql</li>
+            </ol>
+        </div>
+    </body>
+</html>
+
+<style>
+    *{ padding: 0; color: gray; }
+    h1 {color: rgb(255, 142, 37);}
+    body p {color: red;}
+    .sel-class {font-style: italic; color: rgb(14,255,255);}
+    #sel-id {color:green;}
+    ul > li {color: blueviolet;}
+    /*p.sel-class {color: yellow;}*/
+    
+</style>

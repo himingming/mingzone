@@ -1,0 +1,38 @@
+<body>
+    <!--relative vs absolute-->
+    <h3>relative vs absolute</h3>
+
+    <!--relative-->
+    <!--기본 위치를 기준으로 상하좌우 상대적인 좌표로 배치-->
+    <div style="position: relative;">
+        <span style="position: relative; left: 10px;">A</span>
+        <span Style="position: relative; left: 20px;">B</span>
+        <span style="position: relative; left: 30px;">C</span>
+        <span style="position: relative; left: 30px;">D</span>
+        <span style="position: relative; margin-left: 50px;">E</span>
+    </div>
+
+    <!--absolute-->
+    <!--부모/자식 안에서 부모의 좌상단을 기준으로 절대좌표로 배치-->
+    <div style="position: relative;">
+        <span style="position: absolute; left: 10px;"></span>
+        <span style="position: absolute; left: 50px;"></span>
+        <span style="position: absolute; left: 70px; top: 50px;"></span>
+    </div>
+</body>
+
+<style>
+    span {
+            background-color: gray;
+            border" 1px dashed red;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+    }
+    div {
+        border: 10px dotted yellow;
+        margin-top: 30px;
+        height: 400px;
+        width: 400px;
+    }
+</style>
